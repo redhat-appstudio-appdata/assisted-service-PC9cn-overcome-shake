@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: assisted-service
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: assisted-service
+    app.kubernetes.io/part-of: assisted-service
+  name: assisted-service
+spec:
+  ports:
+  - port: 6060
+    targetPort: 6060
+  selector:
+    app.kubernetes.io/instance: assisted-service
+status:
+  loadBalancer: {}
