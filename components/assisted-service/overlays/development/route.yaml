@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: assisted-service
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: assisted-service
+    app.kubernetes.io/part-of: assisted-service
+  name: assisted-servicexdsm
+spec:
+  path: /
+  port:
+    targetPort: 6060
+  to:
+    kind: Service
+    name: assisted-service
+    weight: null
+status: {}
