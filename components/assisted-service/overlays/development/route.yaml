@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: assisted-service
     app.kubernetes.io/part-of: assisted-service
-  name: assisted-servicexdsm
+  name: assisted-serviceribf
 spec:
   path: /
   port:
