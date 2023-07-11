@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: assisted-service
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
@@ -12,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/gbenhaim-tenant/assisted-service/assisted-service@sha256:dd422b82b6e259520e460651bd842a82361a13f5c4e7d32f911e403fb65bc34e
+      - image: quay.io/redhat-user-workloads/gbenhaim-tenant/assisted-service/assisted-service@sha256:762a6663688cf1bc905121b0358f895b19541373495a1807613bf7061629bde1
         name: my-python
         resources: {}
 status: {}
