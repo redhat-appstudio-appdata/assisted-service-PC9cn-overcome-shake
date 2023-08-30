@@ -11,7 +11,8 @@ metadata:
   name: assisted-service
 spec:
   ports:
-  - port: 6060
+  - name: "6060"
+    port: 6060
     targetPort: 6060
   selector:
     app.kubernetes.io/instance: assisted-service
