@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: assisted-service
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/gbenhaim-tenant/assisted-service/assisted-service@sha256:e09163f167891533c3eb269d3303349b207be49d3cb40314cc3392baf99ebb09
+      - image: quay.io/redhat-user-workloads/gbenhaim-tenant/assisted-service/assisted-service@sha256:e1a3b33888365cfd65fbb19594e8ca3be98aa2613528ce2c618df23b8e17bd5d
         name: my-python
         ports:
         - containerPort: 8081
